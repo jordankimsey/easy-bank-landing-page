@@ -1,7 +1,7 @@
 export const DUMMY_ARTICLES = [
   {
     id: '1',
-    image: 'image-currency.jpg',
+    imageP: 'image-currency.jpg',
     author: 'Claire Robinson',
     title: 'Receive money in any currency with no fees ',
     description:
@@ -10,7 +10,7 @@ export const DUMMY_ARTICLES = [
 
   {
     id: '2',
-    image: 'image-restaurant.jpg',
+    imageP: 'image-restaurant.jpg',
     author: 'Wilson Hutton',
     title: 'Treat yourself without worrying about money',
     description:
@@ -18,7 +18,7 @@ export const DUMMY_ARTICLES = [
   },
   {
     id: '3',
-    image: 'image-plane.jpg',
+    imageP: 'image-plane.jpg',
     author: 'Wilson Hutton',
     title: 'Take your Easybank card wherever you go ',
     description:
@@ -27,7 +27,7 @@ export const DUMMY_ARTICLES = [
   ,
   {
     id: '4',
-    image: 'image-confetti.jpg',
+    imageP: 'image-confetti.jpg',
     author: 'Claire Robinson',
     title: ' Our invite-only Beta accounts are now live!',
     description:

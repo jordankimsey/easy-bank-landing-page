@@ -8,18 +8,15 @@ import {
   CardActionArea,
   CardActions,
 } from '@mui/material';
+import Image from 'next/image'
 
 const ArticleCard = ({ article }) => {
+  const imagePath = `/images/${article.imageP}`;
   return (
     <Card elevation={0}>
       <CardActionArea>
-        <CardMedia
-          component='img'
-          height='250'
-          width='50'
-          image={`../../images/${article.image}`}
-          alt='article image'
-        />
+      
+        <Image src={imagePath} alt={article.title} height={300} width={500}/>
         <CardContent
           sx={{
             display: 'flex',
