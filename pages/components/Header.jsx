@@ -52,8 +52,8 @@ function Header(props) {
         <List sx={{ textAlign: 'center' }}>
           {navItems.map((item, index) => (
             <ListItem key={index} disablePadding>
-              <ListItemButton sx={{ textAlign: 'center' }}>
-                <ListItemText primary={item} />
+              <ListItemButton key={index} sx={{ textAlign: 'center' }}>
+                <ListItemText key={index} primary={item} />
               </ListItemButton>
             </ListItem>
           ))}
