@@ -11,8 +11,8 @@ const CallToAction = () => {
     <Grid container direction='row-reverse'>
       <Grid item xs={12} sm={6}>
         <Box className='overlapGrid' maxWidth='sm'>
-          <Image src={bgDesktop} layout='responsive' />
-          <Image src={mockup} layout='responsive' />
+          <Image src={bgDesktop} alt='background' layout='responsive' />
+          <Image src={mockup} alt='background' layout='responsive' />
         </Box>
       </Grid>
 
@@ -23,7 +23,7 @@ const CallToAction = () => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          alignItems: {xs: 'center', sm:'flex-start'},
+          alignItems: { xs: 'center', sm: 'flex-start' },
           justifyContent: 'center',
           paddingY: { sm: 6, md: 0 },
         }}

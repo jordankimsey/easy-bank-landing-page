@@ -61,6 +61,7 @@ const Footer = () => {
             height={20}
             color='white'
             bgColor='white'
+            alt='logo'
           />
         </Box>
         <ButtonGroup sx={{ paddingTop: 3 }} disableGutters>
@@ -68,19 +69,19 @@ const Footer = () => {
             aria-label='facebook'
             sx={{ '&:hover': { backgroundColor: 'primary.light' } }}
           >
-            <Image src={facebook} className='bg-hover' />
+            <Image src={facebook} alt='facebook' className='bg-hover' />
           </IconButton>
           <IconButton aria-label='youtube'>
-            <Image src={youtube} className='bg-hover' />
+            <Image src={youtube} alt='youtube' className='bg-hover' />
           </IconButton>
           <IconButton aria-label='twitter'>
-            <Image src={twitter} className='bg-hover' />
+            <Image src={twitter} alt='twitter' className='bg-hover' />
           </IconButton>
           <IconButton aria-label='pinterest'>
-            <Image src={pinterest} className='bg-hover' />
+            <Image src={pinterest} alt='pinterest' className='bg-hover' />
           </IconButton>
           <IconButton aria-label='instagram'>
-            <Image src={instagram} className='bg-hover' />
+            <Image src={instagram} alt='instagram' className='bg-hover' />
           </IconButton>
         </ButtonGroup>
       </Grid>
@@ -101,8 +102,9 @@ const Footer = () => {
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
           sx={{ marginTop: { xs: 2, md: 0 } }}
         >
-          {navLinks.map((nav) => (
+          {navLinks.map((nav, index) => (
             <Grid
+            key={index}
               item
               xs={12}
               md={6}

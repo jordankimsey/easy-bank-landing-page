@@ -18,6 +18,7 @@ const ArticleCard = ({ article }) => {
           height='250'
           width='50'
           image={`../../images/${article.image}`}
+          alt='article image'
         />
         <CardContent
           sx={{

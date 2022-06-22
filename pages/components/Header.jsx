@@ -44,7 +44,7 @@ function Header(props) {
           }}
         >
           <Button>
-            <Image src={closeIcon} />
+            <Image src={closeIcon} alt='close'/>
           </Button>
         </Container>
         <Divider />
@@ -80,7 +80,7 @@ function Header(props) {
         <Container maxWidth='xl'>
         <Toolbar sx={{ backgroundColor: 'neutral.contrastText' }}>
           <Typography variant='h6' sx={{ flexGrow: 1 }}>
-            <Image src={logo} width={150} height={20} />
+            <Image src={logo} alt='logo' width={150} height={20} />
           </Typography>
 
           <Box
@@ -116,7 +116,7 @@ function Header(props) {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
-            <Image src={menuIcon} />
+            <Image src={menuIcon} alt='menu' />
           </IconButton>
         </Toolbar>
         </Container>
