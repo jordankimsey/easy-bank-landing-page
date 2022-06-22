@@ -27,7 +27,7 @@ const ArticleCard = ({ article }) => {
           }}
         >
           <Typography pt={2} variant='p' color='neutral.main'>
-            By {article.author}
+            By {article?.author}
           </Typography>
           <Typography
             variant='h5'
@@ -37,10 +37,10 @@ const ArticleCard = ({ article }) => {
             color='primary.main'
             sx={{'&:hover': {color: 'primary.light'}}}
           >
-            {article.title}
+            {article?.title}
           </Typography>
           <Typography pt={2}  variant='p' color='neutral.main'>
-            {article.description}
+            {article?.description}
           </Typography>
         </CardContent>
       </CardActionArea>
