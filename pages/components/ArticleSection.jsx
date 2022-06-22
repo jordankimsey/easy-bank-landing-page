@@ -15,9 +15,9 @@ const ArticleSection = () => {
         alignItems={{ xs: 'center', md: 'flex-start' }}
         spacing={3}
       >
-        {DUMMY_ARTICLES.map((article) => (
-          <Box maxWidth={350} key={article.id} maxHeight={600}>
-            <ArticleCard key={article.id} article={article} />
+        {DUMMY_ARTICLES?.map((article) => (
+          <Box maxWidth={350} key={article?.id} maxHeight={600}>
+            <ArticleCard key={article?.id} article={article} />
           </Box>
         ))}
       </Stack>
