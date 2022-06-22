@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import React from 'react';
-import { DUMMY_DATA } from './data/DummyData';
+import { DUMMY_DATA } from '../../data/DummyData';
 import HeroCard from './HeroCard';
 
 const HeroSection = () => {

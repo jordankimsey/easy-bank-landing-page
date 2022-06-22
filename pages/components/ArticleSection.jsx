@@ -1,7 +1,7 @@
 import { Box, Stack, Typography } from '@mui/material';
 import React from 'react';
 import ArticleCard from './ArticleCard';
-import { DUMMY_ARTICLES } from './data/DummyArticles';
+import { DUMMY_ARTICLES } from '../../data/DummyArticles';
 
 const ArticleSection = () => {
   return (
