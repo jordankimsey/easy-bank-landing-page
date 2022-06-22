@@ -11,7 +11,7 @@ import {
 import Image from 'next/image'
 
 const ArticleCard = ({ article }) => {
-  const imagePath = `/images/${article.imageP}`;
+  const imagePath = `/images/${article?.imageP}`;
   return (
     <Card elevation={0}>
       <CardActionArea>
