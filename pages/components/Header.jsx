@@ -50,8 +50,8 @@ function Header(props) {
         <Divider />
 
         <List sx={{ textAlign: 'center' }}>
-          {navItems.map((item) => (
-            <ListItem key={item} disablePadding>
+          {navItems.map((item, index) => (
+            <ListItem key={index} disablePadding>
               <ListItemButton sx={{ textAlign: 'center' }}>
                 <ListItemText primary={item} />
               </ListItemButton>
@@ -91,9 +91,9 @@ function Header(props) {
               height: '100%',
             }}
           >
-            {navItems.map((item) => (
+            {navItems.map((item, index) => (
               <Button
-                key={item}
+                key={index}
                 sx={{
                   color: 'neutral.main',
                   '&:hover': {
