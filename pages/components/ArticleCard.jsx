@@ -16,7 +16,7 @@ const ArticleCard = ({ article }) => {
     <Card elevation={0}>
       <CardActionArea>
       
-        <Image src={imagePath} alt={article.title} height={300} width={500}/>
+        <Image src={imagePath} alt='image' height={300} width={500}/>
         <CardContent
           sx={{
             display: 'flex',
